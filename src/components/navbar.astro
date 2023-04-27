@@ -1,30 +1,100 @@
-<nav class="flex items-center justify-between flex-wrap bg-#191919 p-4 md:mx-16">
-    <div class="flex items-center flex-shrink-0 text-white mr-6">
-      <img src="/Logo.svg" alt="" style="width: 3rem;">
-      <span class="font-bold text-xl tracking-tight mx-3">Portfolio</span>
-    </div>
-    <div class="block md:hidden">
-      <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-      </button>
-    </div>
-    <div class="block">
-        <button class="btn p-4 rounded hover:bg-orange-500 hover:text-black hover:animate-pulse">
-            <a href="" class="mx-4">Home</a>
-        </button>
-        <button class="btn p-4 rounded hover:bg-orange-500 hover:text-black hover:animate-pulse">
-            <a href="" class="mx-4">Sevices</a>
-        </button>
-        <button class="btn p-4 rounded hover:bg-orange-500 hover:text-black hover:animate-pulse">
-            <a href="" class="mx-4">Skill</a>
-        </button>
-        <button class="btn p-4 rounded hover:bg-orange-500 hover:text-black hover:animate-pulse">
-            <a href="" class="mx-4">Projects</a>
-        </button>
-        <button class="btn p-4 rounded hover:bg-orange-500 hover:text-black hover:animate-pulse">
-            <a href="" class="mx-4">Contact</a>
-        </button>
-    </div>
-      
-   
-  </nav>
+---
+console.log("Esto es una prueba");
+---
+
+<nav class="flex bg-#191919 justify-between px-16">
+  <div class="flex items-center">
+    <img src="/Logo.svg" alt="" class="sm:w-20 ml-6" />
+    <p
+      class="lg:text-6xl align-middle font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-red-700 ml-5 sm:text-8xl"
+    >
+      Portfolio
+    </p>
+  </div>
+  <ul
+    class="lg:flex lg:justify-end items-center sm:pt-12 lg:pt-0 sm:absolute lg:relative bg-zinc-600 lg:bg-transparent sm:z-[-1] lg:z-0 w-full left-0 sm:hidden"
+  >
+    <li
+      class="p-3 mx-2 rounded hover:bg-orange-500 lg:border-b-4 border-orange-500"
+    >
+      <a href="">Home</a>
+    </li>
+    <li
+      class="p-3 mx-2 rounded hover:bg-orange-500 lg:border-b-4 border-orange-500"
+    >
+      <a href="">Services</a>
+    </li>
+    <li
+      class="p-3 mx-2 rounded hover:bg-orange-500 lg:border-b-4 border-orange-500"
+    >
+      <a href="">Skills</a>
+    </li>
+    <li
+      class="p-3 mx-2 rounded hover:bg-orange-500 lg:border-b-4 border-orange-500"
+    >
+      <a href="">Projects</a>
+    </li>
+    <li
+      class="p-3 mx-2 rounded hover:bg-orange-500 lg:border-b-4 border-orange-500"
+    >
+      <a href="">Contact</a>
+    </li>
+  </ul>
+
+  <span
+    id=""
+    class="menuButton mx-4 pt-3 text-5xl cursor-pointer lg:hidden sm:block sm:pt-6 text-orange-500"
+  >
+    <ion-icon id="menuButton" name="menu-outline"></ion-icon>
+  </span>
+</nav>
+
+<div
+  id="nav"
+  class="grid h-screen bg-gradient-to-r from-orange-500 to-red-700 hidden lg:hidden"
+  style=""
+>
+  <span class="flex items-center justify-center">
+    <a href="" class="text-5xl">Home</a>
+  </span>
+  <span class="flex items-center justify-center">
+    <a href="" class="text-5xl">Services</a>
+  </span>
+  <span class="flex items-center justify-center">
+    <a href="" class="text-5xl">Skills</a>
+  </span>
+  <span class="flex items-center justify-center">
+    <a href="" class="text-5xl">Projects</a>
+  </span>
+  <span class="flex items-center justify-center">
+    <a href="" class="text-5xl">Contact</a>
+  </span>
+</div>
+
+<style></style>
+
+<script>
+  const Nav = document.getElementById("nav");
+  const icon = document.querySelector("ion-icon");
+  const name = icon.getAttribute("name");
+
+  // Nav.classList.add("hidden");
+  // Nav.classList.remove("hidden");
+
+  icon.addEventListener("click", () => {
+  icon.setAttribute(
+    "name",
+    icon.getAttribute("name") === "menu-outline"
+      ? "close-outline"
+      : "menu-outline"
+  );
+  const name = icon.getAttribute("name");
+  if (name == "close-outline") {
+    Nav.classList.remove("hidden");
+  } else {
+    Nav.classList.add("hidden");
+  }
+});
+
+  console.log(Nav)
+</script>
