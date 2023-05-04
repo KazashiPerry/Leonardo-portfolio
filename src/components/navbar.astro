@@ -4,8 +4,7 @@ import Personal from "../components/personal.astro";
 
 <button
   id="buttonMenu"
-  type="buttonNav"
-  class="container fixed items-center p-5 sm:block md:hidden text-blanco bg-negro "
+  class="container fixed items-center p-5 sm:block md:hidden text-blanco bg-negro"
 >
   <span class="sr-only">Open sidebar</span>
   <svg
@@ -28,15 +27,11 @@ import Personal from "../components/personal.astro";
   class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
   aria-label="Sidebar"
 >
-  <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+  <div class="px-3 py-4 overflow-y-auto bg-sky-400 dark:bg-gris h-full">
     <a href="" class="flex items-center pl-2.5 mb-5">
-      <img
-        src="/public/Logo.svg"
-        class="h-16 mr-3"
-        alt="Portfolio logo"
-      />
+      <img src="/public/Logo.svg" class="h-16 mr-3" alt="Portfolio logo" />
       <span
-        class="self-center font-semibold whitespace-nowrap dark:text-white text-4xl"
+        class="self-center font-bold whitespace-nowrap dark:text-white text-4xl"
         >Portfolio</span
       >
     </a>
@@ -45,10 +40,27 @@ import Personal from "../components/personal.astro";
       <li>
         <a
           href="#"
-          class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+          class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white dark:hover:bg-gray-700"
         >
-          <span class="material-symbols-outlined text-4xl"> home</span>
-          <span class="ml-3 text-3xl">Home</span>
+          <span
+            class="material-symbols-outlined text-4xl text-negro dark:text-blanco font-semibold"
+          >
+            cottage
+          </span>
+          <span class="ml-3 text-3xl text-negro dark:text-blanco font-semibold">Home</span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+          class="flex items-center p-2 text-negro rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+        >
+          <span
+            class="material-symbols-outlined text-4xl text-negro dark:text-blanco font-semibold"
+          >
+            data_array</span
+          >
+          <span class="ml-3 text-3xl dark:text-blanco font-semibold">Services</span>
         </a>
       </li>
       <li>
@@ -56,8 +68,12 @@ import Personal from "../components/personal.astro";
           href="#"
           class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
         >
-          <span class="material-symbols-outlined text-4xl"> data_array</span>
-          <span class="ml-3 text-3xl">Services</span>
+          <span
+            class="material-symbols-outlined text-4xl text-negro dark:text-blanco font-semibold"
+          >
+            code</span
+          >
+          <span class="ml-3 text-3xl text-negro dark:text-blanco font-semibold">Skills</span>
         </a>
       </li>
       <li>
@@ -65,8 +81,14 @@ import Personal from "../components/personal.astro";
           href="#"
           class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
         >
-          <span class="material-symbols-outlined text-4xl"> code</span>
-          <span class="ml-3 text-3xl">Skills</span>
+          <span
+            class="material-symbols-outlined text-4xl text-negro dark:text-blanco font-semibold"
+          >
+            work</span
+          >
+          <span class="ml-3 text-3xl text-negro dark:text-blanco font-semibold">
+            Projects</span
+          >
         </a>
       </li>
       <li>
@@ -74,17 +96,12 @@ import Personal from "../components/personal.astro";
           href="#"
           class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
         >
-          <span class="material-symbols-outlined text-4xl"> work</span>
-          <span class="ml-3 text-3xl"> Projects</span>
-        </a>
-      </li>
-      <li>
-        <a
-          href="#"
-          class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
-        >
-          <span class="material-symbols-outlined text-4xl"> contact_mail</span>
-          <span class="ml-3 text-3xl">Contact</span>
+          <span
+            class="material-symbols-outlined text-4xl text-negro dark:text-blanco font-semibold"
+          >
+            contact_mail</span
+          >
+          <span class="ml-3 text-3xl text-negro dark:text-blanco font-semibold">Contact</span>
         </a>
       </li>
     </ul>
@@ -96,7 +113,7 @@ import Personal from "../components/personal.astro";
       >
         <svg
           id="theme-toggle-dark-icon"
-          class="hidden w-16 h-16"
+          class="hidden w-16 h-16 text-negro"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
@@ -118,26 +135,18 @@ import Personal from "../components/personal.astro";
       </button>
       <div id="back" class="mt-60">
         <button>
-          <a class="h-50 w-50" href="">
-            <span class="material-symbols-outlined text-negro dark:text-blanco  text-7xl hover:scale-125 transition-all sm:block md:hidden">
+          <a class="h-50 w-50 dark:text-blanco" href="">
+            <span
+              class="material-symbols-outlined text-negro dark:text-blanco text-7xl hover:scale-125 transition-all sm:block md:hidden"
+            >
               arrow_back
-              </span>
+            </span>
           </a>
         </button>
       </div>
-
     </div>
   </div>
 </nav>
-
-<div class="sm:ml-64 p-4 bg-blanco dark:bg-negro
-dark:text-blanco">
-
-  <Personal  />
-
-</div>
-
-
 
 
 <script>
@@ -184,32 +193,23 @@ dark:text-blanco">
     }
   });
 
-
-
   //Interacción del botón con el sidenav
   const Nav = document.getElementById("navbar");
-const state = Nav.getAttribute("state");
-const buttonNav = document.getElementById("buttonMenu");
-const backButton = document.getElementById("back");
-console.log(backButton);
+  const state = Nav.getAttribute("state");
+  const buttonNav = document.getElementById("buttonMenu");
+  const backButton = document.getElementById("back");
+  console.log(backButton);
 
-buttonNav.addEventListener("click", () => {
-  Nav.classList.toggle("-translate-x-full")
-});
+  buttonNav.addEventListener("click", () => {
+    Nav.classList.toggle("-translate-x-full");
+  });
 
-backButton.addEventListener("click", () => {
-  Nav.classList.toggle("-translate-x-full")
-});
+  backButton.addEventListener("click", () => {
+    Nav.classList.toggle("-translate-x-full");
+  });
 
-
-
-
-
-
-
-
-// -translate-x-full 
-// icon.addEventListener("click", () => {
+  // -translate-x-full
+  // icon.addEventListener("click", () => {
   /* icon.setAttribute(
     "name",
     icon.getAttribute("name") === "menu-outline"
@@ -222,6 +222,5 @@ backButton.addEventListener("click", () => {
   } else {
     Nav.classList.add("hidden");
   }
-}); */ 
-
+}); */
 </script>
