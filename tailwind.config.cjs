@@ -12,6 +12,9 @@ module.exports = {
 				'negro': '#121212',
 				'gris': '#262626',
 				'celeste': '#79c0ea'
+			},
+			backgroundImage: {
+				'svg-image': "url('/public/wave-haikei.svg')"
 			}
 		},
 	},
