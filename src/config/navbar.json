@@ -1,0 +1,20 @@
+{
+    "navbar":[
+        {
+            "title": "Home"
+        },
+        {
+            "title": "Services"
+        },
+        {
+            "title": "Skills"
+        },
+        {
+            "title": "Projects"
+        },
+        {
+            "title": "Contact"
+        }
+
+    ]
+}

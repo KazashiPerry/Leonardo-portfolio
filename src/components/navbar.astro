@@ -1,10 +1,11 @@
 ---
 import Personal from "../components/personal.astro";
+import { navbar } from '../config/navbar.json'
 ---
 
 <button
   id="buttonMenu"
-  class="container fixed items-center p-5 sm:block md:hidden text-blanco bg-negro"
+  class=" fixed w-full inset-x-0 items-center p-5 sm:block md:hidden text-blanco bg-negro"
 >
   <span class="sr-only">Open sidebar</span>
   <svg
@@ -24,90 +25,35 @@ import Personal from "../components/personal.astro";
 
 <nav
   id="navbar"
-  class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+  class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full md:translate-x-0"
   aria-label="Sidebar"
 >
-  <div class="px-3 py-4 overflow-y-auto bg-sky-400 dark:bg-gris h-full">
+  <div class="px-3 py-4 overflow-y-auto bg-celeste dark:bg-gris h-full">
     <a href="" class="flex items-center pl-2.5 mb-5">
       <!-- <img src="/public/Logo.svg" class="h-16 mr-3" alt="Portfolio logo" /> -->
       <span
-        class="self-center font-bold whitespace-nowrap dark:text-white text-4xl"
+        class="self-center font-bold whitespace-nowrap dark:text-sky-200 text-4xl"
         >Portfolio</span
       >
     </a>
 
     <ul class="space-y-2 font-medium">
-      <li>
-        <a
-          href="#"
-          class="flex items-center p-2 rounded-lg dark:hover:bg-sky-400  ml-3 text-3xl text-negro dark:text-sky-400 dark:hover:text-negro  font-semibold"
-        >
-          <!-- <span
-            class="material-symbols-outlined text-4xl text-negro dark:text-blanco font-semibold"
-          >
-            contact_mail</span
-          > -->
-          Home
-        </a>
-      </li>
-      <li>
-        <a
-          href="#"
-          class="flex items-center p-2 rounded-lg dark:hover:bg-sky-400  ml-3 text-3xl text-negro dark:text-sky-400 dark:hover:text-negro  font-semibold"
-        >
-          <!-- <span
-            class="material-symbols-outlined text-4xl text-negro dark:text-blanco font-semibold"
-          >
-            contact_mail</span
-          > -->
-          Services
-        </a>
-      </li>
-      <li>
-        <a
-          href="#"
-          class="flex items-center p-2 rounded-lg dark:hover:bg-sky-400  ml-3 text-3xl text-negro dark:text-sky-400 dark:hover:text-negro  font-semibold"
-        >
-          <!-- <span
-            class="material-symbols-outlined text-4xl text-negro dark:text-blanco font-semibold"
-          >
-            contact_mail</span
-          > -->
-          Skills
-        </a>
-      </li>
-      <li>
-        <a
-          href="#"
-          class="flex items-center p-2 rounded-lg dark:hover:bg-sky-400  ml-3 text-3xl text-negro dark:text-sky-400 dark:hover:text-negro  font-semibold"
-        >
-          <!-- <span
-            class="material-symbols-outlined text-4xl text-negro dark:text-blanco font-semibold"
-          >
-            contact_mail</span
-          > -->
-          Projects
-        </a>
-      </li>
-      <li>
-        <a
-          href="#"
-          class="flex items-center p-2 rounded-lg dark:hover:bg-sky-400  ml-3 text-3xl text-negro dark:text-sky-400 dark:hover:text-negro  font-semibold"
-        >
-          <!-- <span
-            class="material-symbols-outlined text-4xl text-negro dark:text-blanco font-semibold"
-          >
-            contact_mail</span
-          > -->
-          Contact
-        </a>
-      </li>
+      
+      {
+        navbar.map((navbar) =>(
+          <a class="flex items-center p-2 rounded-lg dark:hover:bg-sky-200  ml-3 text-3xl text-negro dark:text-sky-200 dark:hover:text-negro  font-semibold" href="">{navbar.title}</a>
+        ) )
+      }
+  
     </ul>
+
+
+
     <div class="">
       <button
         id="theme-toggle"
         type="button"
-        class="text-sky-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mt-3"
+        class="text-celeste hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mt-3"
       >
         <svg
           id="theme-toggle-dark-icon"
