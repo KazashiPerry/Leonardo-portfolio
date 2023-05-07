@@ -1,0 +1,41 @@
+{
+    "skills":[
+        {
+          "img": "../../public/skills/astro.svg", 
+          "title": "Astro"
+        },
+        {
+            "img": "../../public/skills/html5.svg", 
+            "title": "HTML"
+        },
+        {
+            "img": "../../public/skills/css3.svg",
+            "title": "CSS"
+        },
+        {
+            "img": "../../public/skills/javascript.svg",
+            "title": "Javascript"
+        },
+        {
+            "img": "../../public/skills/bootstrap.svg",
+            "title": "Bootstrap"
+        },
+        {
+            "img": "../../public/skills/tailwind.svg",
+            "title": "Tailwind"
+        },
+        {
+            "img": "../../public/skills/git.svg",
+            "title": "Git"
+        },
+        {
+            "img": "../../public/skills/github.svg",
+            "title": "GitHub"
+        },
+        {
+            "img": "../../public/skills/react.svg",
+            "title": "React"
+        }
+
+    ]
+}

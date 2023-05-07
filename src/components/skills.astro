@@ -1,0 +1,36 @@
+---
+import { skills } from "../config/skills.json";
+import { Icon } from "astro-icon";
+---
+
+<p
+  class="text-4xl pb-32 lg:pb-20 pl-10 bg-celeste-crema dark:bg-sky-800 pt-20 font-semibold text-negro"
+>
+  My <span class="dark:text-sky-400">skills</span>
+</p>
+<div
+  class="grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 place-items-center bg-celeste-crema dark:bg-sky-800 lg:pb-32"
+>
+  {
+    skills.map((skill) => (
+      <div class="flex flex-col items-center pb-10">
+        <img
+          class="imagen border-celeste border-4 p-4"
+          src={skill.img}
+          alt=""
+        />
+        <p class="text-negro text-2xl pt-4 font-semibold">{skill.title}</p>
+      </div>
+    ))
+  }
+</div>
+
+<style>
+  .imagen {
+    width: 8rem;
+    box-shadow: 2px 13px 23px 4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 13px 23px 4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 13px 23px 4px rgba(0, 0, 0, 0.75);
+  }
+  
+</style>

@@ -13,13 +13,15 @@ module.exports = {
 				'gris': '#262626',
 				'celeste': '#79c0ea',
 				'crema': '#f6eec0',
-				'celeste-crema': '#bae6fd'
+				'celeste-crema': '#bae6fd',
+				'verde-azul': '#35879b'
 			},
 			backgroundImage: {
 				'svg-image': "url('/public/wave-haikei.svg')",
 				'svg-image-top': "url('/public/wave-haikei-top.svg')",
 				'svg-crema-top': "url('/public/wave-haikei-crema-top.svg')",
-				'svg-crema-bot': "url('/public/wave-haikei-crema-bot.svg')"
+				'svg-crema-bot': "url('/public/wave-haikei-crema-bot.svg')",
+				'circle-dark': "url('/public/circle-dark.svg')"
 			}
 		},
 	},
