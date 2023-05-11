@@ -1,6 +1,15 @@
 ---
 import Personal from "../components/personal.astro";
+import Contact from '../components/contact.astro'
+import Projects from '../components/projects.astro'
+import Services from '../components/services.astro'
+import Skills from '../components/skills.astro'
 import { navbar } from '../config/navbar.json'
+component: Personal
+component: Contact
+component: Projects
+component: Services
+component: Skills
 ---
 
 <button
@@ -41,7 +50,7 @@ import { navbar } from '../config/navbar.json'
       
       {
         navbar.map((navbar) =>(
-          <a class="flex items-center p-2 rounded-lg dark:hover:bg-sky-200  ml-3 text-3xl text-negro dark:text-sky-200 dark:hover:text-negro  font-semibold" href="">{navbar.title}</a>
+          <a class="flex items-center p-2 rounded-lg dark:hover:bg-sky-200  ml-3 text-3xl text-negro dark:text-sky-200 dark:hover:text-negro  font-semibold"  href = { navbar.id }>{navbar.title}</a>
         ) )
       }
   
@@ -142,7 +151,6 @@ import { navbar } from '../config/navbar.json'
   const state = Nav.getAttribute("state");
   const buttonNav = document.getElementById("buttonMenu");
   const backButton = document.getElementById("back");
-  console.log(backButton);
 
   buttonNav.addEventListener("click", () => {
     Nav.classList.toggle("-translate-x-full");
@@ -167,4 +175,5 @@ import { navbar } from '../config/navbar.json'
     Nav.classList.add("hidden");
   }
 }); */
+
 </script>

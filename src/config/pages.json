@@ -1,0 +1,24 @@
+{
+    "pages":[
+        {
+            "title": "Shokolat",
+            "img": "/public/pages_image/shokolat.png"
+        },
+        {
+            "title": "VIH info",
+            "img": "/public/pages_image/info_vih.png"
+        },
+        {
+            "title": "Canvas Sketch",
+            "img": "/public/pages_image/canvas_sketch.png"
+        },
+        {
+            "title": "Jack",
+            "img": "/public/examples/24016.jpg"
+        },
+        {
+            "title": "Jack",
+            "img": "/public/examples/23949.jpg"
+        }
+    ]
+}

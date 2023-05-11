@@ -1,19 +1,24 @@
 {
     "navbar":[
         {
-            "title": "Home"
+            "title": "Home",
+            "id": "#Personal"
         },
         {
-            "title": "Services"
+            "title": "Services",
+            "id": "#Services"
         },
         {
-            "title": "Skills"
+            "title": "Skills",
+            "id": "#Skills"
         },
         {
-            "title": "Projects"
+            "title": "Projects",
+            "id": "#Projects"
         },
         {
-            "title": "Contact"
+            "title": "Contact",
+            "id": "#Contact"
         }
 
     ]
