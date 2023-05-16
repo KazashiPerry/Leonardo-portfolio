@@ -5,6 +5,7 @@ import Projects from '../components/projects.astro'
 import Services from '../components/services.astro'
 import Skills from '../components/skills.astro'
 import { navbar } from '../config/navbar.json'
+import { list } from "postcss";
 component: Personal
 component: Contact
 component: Projects
@@ -50,7 +51,9 @@ component: Skills
       
       {
         navbar.map((navbar) =>(
-          <a class="flex items-center p-2 rounded-lg hover:bg-blanco dark:hover:bg-sky-200  ml-3 text-3xl text-negro dark:text-sky-200 dark:hover:text-negro  font-semibold"  href = { navbar.id }>{navbar.title}</a>
+          <li>
+            <a class="flex items-center p-2 rounded-lg hover:bg-blanco dark:hover:bg-sky-200  ml-3 text-3xl text-negro dark:text-sky-200 dark:hover:text-negro  font-semibold"  href = { navbar.id }>{navbar.title}</a>
+            </li>
         ) )
       }
   
