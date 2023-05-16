@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+    <!--Flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet">
+    
+    <!--ionicons -->
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!--ionicons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+
+    
+  <link rel="stylesheet" href="/_astro/index.15418b5c.css" /><script type="module" src="/_astro/hoisted.f9a7e8fa.js"></script></head>
+  <body>
+    <main class="">
+      
+
+	<button id="buttonMenu" class=" fixed w-full inset-x-0 items-center p-5 sm:block md:hidden text-blanco bg-negro">
+  <span class="sr-only">Open sidebar</span>
+  <svg class="w-8 h-8" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
+  </svg>
+</button>
+
+<nav id="navbar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full md:translate-x-0" aria-label="Sidebar">
+  <div class="px-3 py-4 overflow-y-auto bg-celeste dark:bg-gris h-full">
+    <a href="" class="flex items-center pl-2.5 mb-5">
+      <!-- <img src="/public/Logo.svg" class="h-16 mr-3" alt="Portfolio logo" /> -->
+      <span class="self-center font-bold whitespace-nowrap dark:text-sky-200 text-4xl">| Portfolio</span>
+    </a>
+
+    <ul class="space-y-2 font-medium">
+      
+      <a class="flex items-center p-2 rounded-lg hover:bg-blanco dark:hover:bg-sky-200  ml-3 text-3xl text-negro dark:text-sky-200 dark:hover:text-negro  font-semibold" href="#Personal">Home</a><a class="flex items-center p-2 rounded-lg hover:bg-blanco dark:hover:bg-sky-200  ml-3 text-3xl text-negro dark:text-sky-200 dark:hover:text-negro  font-semibold" href="#Services">Services</a><a class="flex items-center p-2 rounded-lg hover:bg-blanco dark:hover:bg-sky-200  ml-3 text-3xl text-negro dark:text-sky-200 dark:hover:text-negro  font-semibold" href="#Skills">Skills</a><a class="flex items-center p-2 rounded-lg hover:bg-blanco dark:hover:bg-sky-200  ml-3 text-3xl text-negro dark:text-sky-200 dark:hover:text-negro  font-semibold" href="#Projects">Projects</a><a class="flex items-center p-2 rounded-lg hover:bg-blanco dark:hover:bg-sky-200  ml-3 text-3xl text-negro dark:text-sky-200 dark:hover:text-negro  font-semibold" href="#Contact">Contact</a>
+  
+    </ul>
+
+
+
+    <div class="">
+      <button id="theme-toggle" type="button" class="text-celeste hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mt-3">
+        <svg id="theme-toggle-dark-icon" class="hidden w-16 h-16 text-negro" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+        <svg id="theme-toggle-light-icon" class="hidden w-16 h-16" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+      </button>
+      <div id="back" class="mt-60">
+        <button>
+          
+            <span class="material-symbols-outlined text-negro dark:text-celeste-crema text-7xl hover:scale-125 transition-all sm:block md:hidden">
+              arrow_back
+            </span>
+          
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+	<div class="md:ml-64 bg-crema dark:bg-negro
+	 dark:text-blanco">
+		<div class="lg:grid lg:grid-cols-2 px-10 pt-24 md:bg-crema lg:dark:bg-svg-image md:dark:bg-negro lg:bg-svg-crema-bot bg-cover bg-no-repeat lg:h-screen landing astro-CLN3RPOL" id="Personal">
+  <div class=" md:pt-6 lg:pt-20 px-6 astro-CLN3RPOL">
+    <p class="text-5xl astro-CLN3RPOL">Hello <strong class="text-celeste astro-CLN3RPOL">I am</strong></p>
+    <p class="dark:text-celeste md:text-7xl lg:text-7xl font-bold nombre-glow astro-CLN3RPOL">
+      Peralta Leonardo
+    </p>
+    <p class="text-1xl mt-5 font-semibold astro-CLN3RPOL">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus
+      doloremque eos atque in ex ipsam, minima explicabo! Iste cumque maiores
+      nihil est enim impedit. Dolorum facere molestias aliquid iste quam.
+    </p>
+    <div class="mt-6 astro-CLN3RPOL">
+      <button class="text-1xl bg-sky-300 hover:bg-celeste focus:ring-4 focus:ring-blue-300 font-medium rounded-lg px-5 py-2.5 mr-2 mb-2 text-negro   focus:outline-none astro-CLN3RPOL" type="button">
+        <a href="" class="font-semibold text-2xl astro-CLN3RPOL">Let's talk</a>
+      </button>
+      <button type="button" class="text-1xl text-celeste hover:text-negro border border-sky-400 hover:bg-sky-300 focus:ring-4 focus:outline-none focus:ring-celeste font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-celeste dark:text-celeste dark:hover:text-negro dark:hover:bg-celeste dark:focus:ring-celeste astro-CLN3RPOL">
+        <a href="" class="font-semibold text-2xl astro-CLN3RPOL">Check CV</a>
+      </button>
+    </div>
+  </div>
+
+  <div class="pt-10 lg:pt-0 astro-CLN3RPOL">
+    <img class=" astro-CLN3RPOL" src="/public/avatar_new.png" alt="">
+  </div>
+</div>
+		<div class="lg:dark:bg-svg-image-top md:dark:bg-negro bg-cover bg-no-repeat sm:pt-40 pt-72 lg:bg-svg-crema-top lg:pt-80 pb-36 astro-JXDSSI2U" id="Services">
+  <div class="lg:mx-16 md:ml-14 sm:ml-14 astro-JXDSSI2U">
+    <div class="flex items-center astro-JXDSSI2U">
+        <hr class=" dark:border-celeste-crema  border-sky-500 border-t-2 w-10 mr-3 astro-JXDSSI2U">
+        <span class="dark:text-blanco text-negro italic font-semibold astro-JXDSSI2U">MY SERVICES</span>
+      </div>
+      
+    <p class="text-3xl pb-8 dark:text-celeste-crema text-sky-500 font-semibold astro-JXDSSI2U">What Can I Do</p>
+
+
+
+    
+    <div class="lg:flex sm:block gap gap-8 astro-JXDSSI2U">
+      <div class="p-6 sm:mr-8 lg:mr-0 border border-gray-200 rounded-lg shadow bg-celeste-crema dark:border-gray-70 grid justify-items-center mb-12 h-72 astro-JXDSSI2U">
+        <span class="material-symbols-outlined icon astro-JXDSSI2U"> laptop_mac</span>
+        <p class="text-negro text-3xl font-semibold astro-JXDSSI2U">user interface</p>
+        <p class="text-negro text-2xl astro-JXDSSI2U">
+            Assembly and layout of web platforms.
+        </p>
+      </div>
+      <div class="p-6 sm:mr-8 lg:mr-0 border border-gray-200 rounded-lg bg-celeste-crema dark:border-gray-70 grid justify-items-center mb-12 h-72 astro-JXDSSI2U">
+        <span class="material-symbols-outlined icon astro-JXDSSI2U"> code</span>
+        <p class="text-negro text-3xl font-semibold astro-JXDSSI2U">coding</p>
+        <p class="text-negro text-2xl astro-JXDSSI2U">
+            Creation of web pages with HTML, CSS, Javascipt and frameworks.
+        </p>
+      </div>
+      <div class="p-6 sm:mr-8 lg:mr-0 border border-gray-200 rounded-lg shadow bg-celeste-crema dark:border-gray-70 grid justify-items-center h-72 astro-JXDSSI2U">
+        <span class="material-symbols-outlined icon astro-JXDSSI2U"> design_services</span>
+        <p class="text-negro text-3xl font-semibold astro-JXDSSI2U">ui/ux</p>
+        <p class="text-negro text-2xl astro-JXDSSI2U">
+            Design and development of user interfaces.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+		<p class="text-4xl pb-32 lg:pb-20 pl-10 bg-celeste-crema  pt-20 font-semibold text-negro astro-4AOYH525" id="Skills">
+  My skills
+</p>
+<div class="grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 place-items-center bg-celeste-crema  lg:pb-32 astro-4AOYH525">
+  <div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl hover:scale-110 hover:bg-celeste astro-4AOYH525">
+        <img class="imagen  astro-4AOYH525" src="../../public/skills/astro.svg" alt="">
+        <p class="text-negro text-2xl pt-4 font-semibold astro-4AOYH525">Astro</p>
+      </div><div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl hover:scale-110 hover:bg-celeste astro-4AOYH525">
+        <img class="imagen  astro-4AOYH525" src="../../public/skills/html5.svg" alt="">
+        <p class="text-negro text-2xl pt-4 font-semibold astro-4AOYH525">HTML</p>
+      </div><div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl hover:scale-110 hover:bg-celeste astro-4AOYH525">
+        <img class="imagen  astro-4AOYH525" src="../../public/skills/css3.svg" alt="">
+        <p class="text-negro text-2xl pt-4 font-semibold astro-4AOYH525">CSS</p>
+      </div><div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl hover:scale-110 hover:bg-celeste astro-4AOYH525">
+        <img class="imagen  astro-4AOYH525" src="../../public/skills/javascript.svg" alt="">
+        <p class="text-negro text-2xl pt-4 font-semibold astro-4AOYH525">Javascript</p>
+      </div><div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl hover:scale-110 hover:bg-celeste astro-4AOYH525">
+        <img class="imagen  astro-4AOYH525" src="../../public/skills/bootstrap.svg" alt="">
+        <p class="text-negro text-2xl pt-4 font-semibold astro-4AOYH525">Bootstrap</p>
+      </div><div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl hover:scale-110 hover:bg-celeste astro-4AOYH525">
+        <img class="imagen  astro-4AOYH525" src="../../public/skills/tailwind.svg" alt="">
+        <p class="text-negro text-2xl pt-4 font-semibold astro-4AOYH525">Tailwind</p>
+      </div><div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl hover:scale-110 hover:bg-celeste astro-4AOYH525">
+        <img class="imagen  astro-4AOYH525" src="../../public/skills/git.svg" alt="">
+        <p class="text-negro text-2xl pt-4 font-semibold astro-4AOYH525">Git</p>
+      </div><div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl hover:scale-110 hover:bg-celeste astro-4AOYH525">
+        <img class="imagen  astro-4AOYH525" src="../../public/skills/github.svg" alt="">
+        <p class="text-negro text-2xl pt-4 font-semibold astro-4AOYH525">GitHub</p>
+      </div><div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl hover:scale-110 hover:bg-celeste astro-4AOYH525">
+        <img class="imagen  astro-4AOYH525" src="../../public/skills/react.svg" alt="">
+        <p class="text-negro text-2xl pt-4 font-semibold astro-4AOYH525">React</p>
+      </div>
+</div>
+		<!--Credits --><!--https://github.com/emetdas/Youtube-code/tree/master/web%20components/Swiper-Slider-3D-Coverflow --><section id="tranding" class="astro-LSJGADCT">
+    <div class="container astro-LSJGADCT" id="Projects">
+      <!-- <h3 class="text-center section-subheading">- popular Delivery -</h3> -->
+      <h1 class="text-center section-heading text-negro dark:text-celeste nombre-glow astro-LSJGADCT">PROJECTS</h1>
+    </div>
+    <div class="container astro-LSJGADCT">
+      <div class="swiper tranding-slider astro-LSJGADCT">
+        <div class="swiper-wrapper astro-LSJGADCT">
+          <!-- Slide-start -->
+          <div class="swiper-slide tranding-slide astro-LSJGADCT">
+            <div class="tranding-slide-img astro-LSJGADCT">
+              <img src="/public/pages_image/shokolat.png" alt="" class="astro-LSJGADCT">
+            </div>
+            <div class="tranding-slide-content astro-LSJGADCT">
+              <div class="tranding-slide-content-bottom astro-LSJGADCT">
+                <p class="food-name font-semibold text-3xl astro-LSJGADCT">
+                  Shokolat
+                </p>
+                <a href="https://kazashiperry.github.io/Arg_Programa_landing-page/" target="_blank" class="astro-LSJGADCT">
+                    <button class="button bg-celeste dark:bg-gris text-blanco p-4 rounded-2xl astro-LSJGADCT">
+                        About it
+                    </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="swiper-slide tranding-slide astro-LSJGADCT">
+            <div class="tranding-slide-img astro-LSJGADCT">
+              <img src="/public/pages_image/info_vih.png" alt="" class="astro-LSJGADCT">
+            </div>
+            <div class="tranding-slide-content astro-LSJGADCT">
+              <div class="tranding-slide-content-bottom astro-LSJGADCT">
+                <p class="food-name font-semibold text-3xl astro-LSJGADCT">
+                  VIH info
+                </p>
+                <a href="https://kazashiperry.github.io/VIH/" target="_blank" class="astro-LSJGADCT">
+                    <button class="button bg-celeste dark:bg-gris text-blanco p-4 rounded-2xl astro-LSJGADCT">
+                        About it
+                    </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="swiper-slide tranding-slide astro-LSJGADCT">
+            <div class="tranding-slide-img astro-LSJGADCT">
+              <img src="/public/pages_image/canvas_sketch.png" alt="" class="astro-LSJGADCT">
+            </div>
+            <div class="tranding-slide-content astro-LSJGADCT">
+              <div class="tranding-slide-content-bottom astro-LSJGADCT">
+                <p class="food-name font-semibold text-3xl astro-LSJGADCT">
+                    Canvas Sketch
+                  </p>
+                  <a href="https://kazashiperry.github.io/canvas_sketch/" target="_blank" class="astro-LSJGADCT">
+                      <button class="button bg-celeste dark:bg-gris text-blanco p-4 rounded-2xl astro-LSJGADCT">
+                          About it
+                      </button>
+                  </a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="swiper-slide tranding-slide astro-LSJGADCT">
+            <div class="tranding-slide-img astro-LSJGADCT">
+              <img src="/public/examples/24016.jpg" alt="" class="astro-LSJGADCT">
+            </div>
+            <div class="tranding-slide-content astro-LSJGADCT">
+              <div class="tranding-slide-content-bottom astro-LSJGADCT">
+                <p class="food-name font-semibold text-3xl astro-LSJGADCT">
+                    Jack
+                  </p>
+                  <a href="" class="astro-LSJGADCT">
+                      <button class="button bg-celeste dark:bg-gris text-blanco p-4 rounded-2xl astro-LSJGADCT">
+                          About it
+                      </button>
+                  </a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide-end -->
+           <!-- Slide-start -->
+           <div class="swiper-slide tranding-slide astro-LSJGADCT">
+            <div class="tranding-slide-img astro-LSJGADCT">
+              <img src="/public/examples/23949.jpg" alt="" class="astro-LSJGADCT">
+            </div>
+            <div class="tranding-slide-content astro-LSJGADCT">
+              <div class="tranding-slide-content-bottom astro-LSJGADCT">
+                <p class="food-name font-semibold text-3xl astro-LSJGADCT">
+                    Jack
+                  </p>
+                  <a href="" class="astro-LSJGADCT">
+                      <button class="button bg-celeste dark:bg-gris text-blanco p-4 rounded-2xl astro-LSJGADCT">
+                          About it
+                      </button>
+                  </a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide-end -->
+          
+        </div>
+
+        <div class="tranding-slider-control astro-LSJGADCT">
+          <div class="swiper-button-prev slider-arrow astro-LSJGADCT">
+            <ion-icon name="arrow-back-outline" class="astro-LSJGADCT"></ion-icon>
+          </div>
+          <div class="swiper-button-next slider-arrow astro-LSJGADCT">
+            <ion-icon name="arrow-forward-outline" class="astro-LSJGADCT"></ion-icon>
+          </div>
+          <div class="swiper-pagination astro-LSJGADCT"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<div class="bg-celeste-crema text-negro astro-4JMLLEYW">
+  <span class="flex justify-center py-14 text-6xl font-bold astro-4JMLLEYW" id="Contact">Contact</span>
+  <div class="grid grid-cols-2 gap-10 py-14 astro-4JMLLEYW">
+    <div class="flex justify-end items-end  astro-4JMLLEYW">
+        <div class=" grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 md:pb-8 lg:pb-0 astro-4JMLLEYW">
+            <a href="" data-tip="Facebook" class="
+            relative
+            before:content-[attr(data-tip)]
+            before:absolute
+            before:px-3 before:py-2
+            before:left-1/2 before:-top-3
+            before:w-man before:max-w-xs
+            before:-translate-x-1/2 before:-translate-y-full
+            before:bg-gray-700 before:text-white
+            before:rounded-md before:opacity-0
+            before:transition-all
+
+            after:absolute
+            after:left-1/2 after:-top-3
+            after:h-0 after:w-0
+            after:-translate-x-1/2 after:border-8
+            after:border-t-gray-700
+            after:border-l-transparent
+            after:border-b-transparent
+            after:border-r-transparent
+            after:opacity-0
+            after:transition-all
+
+            hover:before:opacity-100 hover:after:opacity-100
+             astro-4JMLLEYW">
+                <img class="icono mx-3 astro-4JMLLEYW" src="/public/social/facebook.svg" alt="">
+            </a>
+            <a href="" data-tip="Whatsapp" class="
+            relative
+            before:content-[attr(data-tip)]
+            before:absolute
+            before:px-3 before:py-2
+            before:left-1/2 before:-top-3
+            before:w-man before:max-w-xs
+            before:-translate-x-1/2 before:-translate-y-full
+            before:bg-gray-700 before:text-white
+            before:rounded-md before:opacity-0
+            before:transition-all
+
+            after:absolute
+            after:left-1/2 after:-top-3
+            after:h-0 after:w-0
+            after:-translate-x-1/2 after:border-8
+            after:border-t-gray-700
+            after:border-l-transparent
+            after:border-b-transparent
+            after:border-r-transparent
+            after:opacity-0
+            after:transition-all
+
+            hover:before:opacity-100 hover:after:opacity-100
+             astro-4JMLLEYW">
+                <img src="/public/social/whatsapp.svg" alt="" class="icono mx-3 astro-4JMLLEYW">
+            </a>
+            <a href="" data-tip="Telegram" class="
+            relative
+            before:content-[attr(data-tip)]
+            before:absolute
+            before:px-3 before:py-2
+            before:left-1/2 before:-top-3
+            before:w-man before:max-w-xs
+            before:-translate-x-1/2 before:-translate-y-full
+            before:bg-gray-700 before:text-white
+            before:rounded-md before:opacity-0
+            before:transition-all
+
+            after:absolute
+            after:left-1/2 after:-top-3
+            after:h-0 after:w-0
+            after:-translate-x-1/2 after:border-8
+            after:border-t-gray-700
+            after:border-l-transparent
+            after:border-b-transparent
+            after:border-r-transparent
+            after:opacity-0
+            after:transition-all
+
+            hover:before:opacity-100 hover:after:opacity-100
+             astro-4JMLLEYW">
+                <img src="/public/social/telegram.svg" alt="" class="icono mx-3 astro-4JMLLEYW">
+            </a>
+            <a href="" data-tip="Linkedin" class="
+            relative
+            before:content-[attr(data-tip)]
+            before:absolute
+            before:px-3 before:py-2
+            before:left-1/2 before:-top-3
+            before:w-man before:max-w-xs
+            before:-translate-x-1/2 before:-translate-y-full
+            before:bg-gray-700 before:text-white
+            before:rounded-md before:opacity-0
+            before:transition-all
+
+            after:absolute
+            after:left-1/2 after:-top-3
+            after:h-0 after:w-0
+            after:-translate-x-1/2 after:border-8
+            after:border-t-gray-700
+            after:border-l-transparent
+            after:border-b-transparent
+            after:border-r-transparent
+            after:opacity-0
+            after:transition-all
+
+            hover:before:opacity-100 hover:after:opacity-100
+             astro-4JMLLEYW">
+                <img class="icono mx-3 astro-4JMLLEYW" src="/public/social/linkedin.svg" alt="">
+            </a>
+            <a href="" data-tip="GitHub" class="
+            relative
+            before:content-[attr(data-tip)]
+            before:absolute
+            before:px-3 before:py-2
+            before:left-1/2 before:-top-3
+            before:w-man before:max-w-xs
+            before:-translate-x-1/2 before:-translate-y-full
+            before:bg-gray-700 before:text-white
+            before:rounded-md before:opacity-0
+            before:transition-all
+
+            after:absolute
+            after:left-1/2 after:-top-3
+            after:h-0 after:w-0
+            after:-translate-x-1/2 after:border-8
+            after:border-t-gray-700
+            after:border-l-transparent
+            after:border-b-transparent
+            after:border-r-transparent
+            after:opacity-0
+            after:transition-all
+
+            hover:before:opacity-100 hover:after:opacity-100
+             astro-4JMLLEYW">
+                <img class="icono mx-3 astro-4JMLLEYW" src="/public/social/github.svg" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="astro-4JMLLEYW">
+        <div class="flex gap-6 astro-4JMLLEYW">
+            <img class="icono astro-4JMLLEYW" src="/public/social/phone.svg" alt="">
+            <span class="astro-4JMLLEYW">54 - 362-4383128</span>
+        </div>
+        <div class="flex gap-6 astro-4JMLLEYW">
+            <img class="icono astro-4JMLLEYW" src="/public/social/location.svg" alt="">
+            <div class="flex items-center astro-4JMLLEYW">
+                <span class="astro-4JMLLEYW">
+                    Argentina, Resistencia-Chaco
+                </span>
+                <span class="sm:hidden lg:block astro-4JMLLEYW">
+                    Avenida Alberdi 2236
+                </span>
+            </div>
+        </div>
+        <div class="flex items-center gap-6 astro-4JMLLEYW">
+            <img class="icono astro-4JMLLEYW" src="/public/social/gmail.svg" alt="">
+            <span class="astro-4JMLLEYW">leoperaltagray@gmail.com</span>
+        </div>
+    </div>
+  </div>
+
+</div>
+	</div>
+
+
+    </main>
+  </body></html>
