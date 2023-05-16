@@ -13,7 +13,7 @@ import { Icon } from "astro-icon";
 >
   {
     skills.map((skill) => (
-      <div class="flex flex-col items-center pb-10">
+      <div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl hover:scale-110 hover:bg-celeste">
         <img
           class="imagen "
           src={skill.img}
@@ -29,5 +29,6 @@ import { Icon } from "astro-icon";
   .imagen {
     width: 8rem;
   }
-  
+    
+
 </style>
