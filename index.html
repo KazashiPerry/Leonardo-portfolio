@@ -7,7 +7,6 @@
     <title>Portfolio</title>
     <!--Flowbite -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet">
-    
     <!--ionicons -->
     
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -19,15 +18,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 
     
-  <link rel="stylesheet" href="/Leonardo-portfolio/index.css" />
-<script type="module" src="/Leonardo-portfolio/index.js"></script></head>
+  <link rel="stylesheet" href="/Leonardo-portfolio/_astro/index.670937e7.css" /><script type="module" src="/Leonardo-portfolio/_astro/hoisted.68264dbe.js"></script></head>
   <body>
     <main class="">
       
 
-	<button id="buttonMenu" class=" fixed w-full inset-x-0 items-center p-8 sm:block md:hidden text-blanco bg-gradient-to-r from-cyan-500 to-blue-500">
+	<button id="buttonMenu" class=" fixed w-full inset-x-0 items-center p-8 sm:block md:hidden text-blanco bg-gradient-to-r from-cyan-500 to-blue-500 z-30">
   <span class="sr-only">Open sidebar</span>
-  <svg class="w-14 h-14" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+  <svg class="w-14 h-14 text-negro" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
     <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
   </svg>
 </button>
@@ -36,21 +34,33 @@
   <div class="px-3 py-4 overflow-y-auto bg-celeste dark:bg-gris h-full">
     <a href="" class="flex items-center pl-2.5 mb-5">
       <!-- <img src="/public/Logo.svg" class="h-16 mr-3" alt="Portfolio logo" /> -->
-      <span class="self-center font-bold whitespace-nowrap dark:text-sky-200 text-4xl">| Portfolio</span>
+      <span class="self-center font-bold whitespace-nowrap dark:text-sky-200 text-4xl pt-6 transition duration-500 ease-in-out transform hover:-translate-y-1">| Portfolio</span>
+      
     </a>
+    <hr class="h-px my-8 bg-crema border-0 dark:bg-sky-200">
 
     <ul class="space-y-2 font-medium">
       
       <li>
-            <a class="flex items-center p-2 rounded-lg hover:bg-blanco dark:hover:bg-sky-200  ml-3 text-3xl text-negro dark:text-sky-200 dark:hover:text-negro  font-semibold" href="#Personal">Home</a>
+            <a class="flex items-center p-2 rounded-lg hover:bg-blanco ml-3 text-3xl text-negro dark:text-sky-200 dark:hover:text-negro  font-semibold
+            
+            transition duration-500 ease-in-out dark:hover:bg-sky-200 transform hover:-translate-y-1 hover:scale-110" href="#Personal">Home</a>
             </li><li>
-            <a class="flex items-center p-2 rounded-lg hover:bg-blanco dark:hover:bg-sky-200  ml-3 text-3xl text-negro dark:text-sky-200 dark:hover:text-negro  font-semibold" href="#Services">Services</a>
+            <a class="flex items-center p-2 rounded-lg hover:bg-blanco ml-3 text-3xl text-negro dark:text-sky-200 dark:hover:text-negro  font-semibold
+            
+            transition duration-500 ease-in-out dark:hover:bg-sky-200 transform hover:-translate-y-1 hover:scale-110" href="#Services">Services</a>
             </li><li>
-            <a class="flex items-center p-2 rounded-lg hover:bg-blanco dark:hover:bg-sky-200  ml-3 text-3xl text-negro dark:text-sky-200 dark:hover:text-negro  font-semibold" href="#Skills">Skills</a>
+            <a class="flex items-center p-2 rounded-lg hover:bg-blanco ml-3 text-3xl text-negro dark:text-sky-200 dark:hover:text-negro  font-semibold
+            
+            transition duration-500 ease-in-out dark:hover:bg-sky-200 transform hover:-translate-y-1 hover:scale-110" href="#Skills">Skills</a>
             </li><li>
-            <a class="flex items-center p-2 rounded-lg hover:bg-blanco dark:hover:bg-sky-200  ml-3 text-3xl text-negro dark:text-sky-200 dark:hover:text-negro  font-semibold" href="#Projects">Projects</a>
+            <a class="flex items-center p-2 rounded-lg hover:bg-blanco ml-3 text-3xl text-negro dark:text-sky-200 dark:hover:text-negro  font-semibold
+            
+            transition duration-500 ease-in-out dark:hover:bg-sky-200 transform hover:-translate-y-1 hover:scale-110" href="#Projects">Projects</a>
             </li><li>
-            <a class="flex items-center p-2 rounded-lg hover:bg-blanco dark:hover:bg-sky-200  ml-3 text-3xl text-negro dark:text-sky-200 dark:hover:text-negro  font-semibold" href="#Contact">Contact</a>
+            <a class="flex items-center p-2 rounded-lg hover:bg-blanco ml-3 text-3xl text-negro dark:text-sky-200 dark:hover:text-negro  font-semibold
+            
+            transition duration-500 ease-in-out dark:hover:bg-sky-200 transform hover:-translate-y-1 hover:scale-110" href="#Contact">Contact</a>
             </li>
   
     </ul>
@@ -72,27 +82,48 @@
         </button>
       </div>
     </div>
+
+    
+<!-- <div class="flex ">
+  <div id="states-button" data-dropdown-toggle="dropdown-states" class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-negro bg-gray-100 border border-gray-300 rounded-l-lg  focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700  dark:focus:ring-gray-700 dark:text-white dark:border-gray-600">
+      
+      Language
+
   </div>
+  
+  
+  <select id="idioma" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-r-lg border-l-gray-100 dark:border-l-gray-700 border-l-2 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+      <option value="CA">English</option>
+      <option value="ES">Español</option>
+      <option value="PT">Português</option>
+      
+  </select>
+</div> -->
+
+
+    </div>
+
+  
 </nav>
 	<div class="md:ml-64 bg-crema dark:bg-negro
 	 dark:text-blanco">
 		<div class="lg:grid lg:grid-cols-2 px-10 pt-24 md:bg-crema lg:dark:bg-svg-image md:dark:bg-negro lg:bg-svg-crema-bot bg-cover bg-no-repeat lg:h-screen landing astro-CLN3RPOL" id="Personal">
   <div class=" xm:pt-14 lg:pt-20 px-6 astro-CLN3RPOL">
-    <p class="text-5xl astro-CLN3RPOL">Hello <strong class=" astro-CLN3RPOL">I am</strong></p>
-    <p class="dark:text-celeste md:text-7xl lg:text-7xl font-bold nombre-glow astro-CLN3RPOL">
+    <p class="text-4xl astro-CLN3RPOL">Hello <strong class=" astro-CLN3RPOL">I am</strong></p>
+    <p class="dark:text-celeste xm:text-5xl md:text-5xl lg:text-7xl font-bold nombre-glow astro-CLN3RPOL">
       Peralta Leonardo
     </p>
     
     
     <p class="text-1xl mt-5 font-semibold presen astro-CLN3RPOL">
-      I am a creative, reliable, and efficient person with a passion for customer service. I am a good listener with an excellent memory and skills to follow instructions. Additionally, I consider myself helpful, responsible, and willing to work hard as a team player. With an analytical mindset, I am always looking for ways to improve my work and achieve my goals.
+      I'm creative, passionate about technology, focused on front-end programming and systems analyst in general.
     </p>
     <div class="mt-6 astro-CLN3RPOL">
-      <button class="text-1xl bg-sky-300 hover:bg-celeste focus:ring-4 focus:ring-blue-300 font-medium rounded-lg px-5 py-2.5 mr-2 mb-2 text-negro   focus:outline-none astro-CLN3RPOL" type="button">
+      <button class="text-1xl bg-sky-300 hover:bg-celeste focus:ring-4 focus:ring-blue-300 font-medium rounded-lg px-5 py-2.5 mr-2 mb-2 text-negro   focus:outline-none  astro-CLN3RPOL" type="button">
         <a href="https://wa.me/qr/FQK6G2XDQZG3E1" target="_blank" class="font-semibold text-2xl astro-CLN3RPOL">Let's talk</a>
       </button>
       <button type="button" class="text-1xl text-celeste hover:text-negro border border-sky-400 hover:bg-sky-300 focus:ring-4 focus:outline-none focus:ring-celeste font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-celeste dark:text-celeste dark:hover:text-negro dark:hover:bg-celeste dark:focus:ring-celeste astro-CLN3RPOL">
-        <a href="https://drive.google.com/file/d/10whpSnBA6J63276xt6x11nbpQ870vIZa/view?usp=sharing" target="_blank" class="font-semibold text-2xl astro-CLN3RPOL">Check CV</a>
+        <a href="https://drive.google.com/file/d/1lcnqMzcWpUcMlg1OFKQRROISy9AGb_Sl/view?usp=sharing" target="_blank" class="font-semibold text-2xl astro-CLN3RPOL">Check CV</a>
       </button>
     </div>
   </div>
@@ -138,35 +169,35 @@
     </div>
   </div>
 </div>
-		<p class="text-4xl pb-32 lg:pb-20 pl-10 bg-celeste-crema  pt-20 font-semibold text-negro astro-4AOYH525" id="Skills">
+		<p class="text-4xl pb-32 lg:pb-20 pl-14 bg-celeste-crema  pt-20 font-semibold text-negro astro-4AOYH525" id="Skills">
   My skills
 </p>
 <div class="grid lg:grid-cols-6 md:grid-cols-3 xm:grid-cols-2 place-items-center bg-celeste-crema  pb-32 astro-4AOYH525">
-  <div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl hover:scale-110 hover:bg-celeste astro-4AOYH525">
+  <div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl transition duration-500 ease-in-out hover:bg-sky-400 transform hover:-translate-y-1 hover:scale-110 astro-4AOYH525">
         <img class="imagen  astro-4AOYH525" src="/Leonardo-portfolio/skills/astro.svg" alt="">
         <p class="text-negro text-2xl pt-4 font-semibold astro-4AOYH525">Astro</p>
-      </div><div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl hover:scale-110 hover:bg-celeste astro-4AOYH525">
+      </div><div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl transition duration-500 ease-in-out hover:bg-sky-400 transform hover:-translate-y-1 hover:scale-110 astro-4AOYH525">
         <img class="imagen  astro-4AOYH525" src="/Leonardo-portfolio/skills/html5.svg" alt="">
         <p class="text-negro text-2xl pt-4 font-semibold astro-4AOYH525">HTML</p>
-      </div><div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl hover:scale-110 hover:bg-celeste astro-4AOYH525">
+      </div><div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl transition duration-500 ease-in-out hover:bg-sky-400 transform hover:-translate-y-1 hover:scale-110 astro-4AOYH525">
         <img class="imagen  astro-4AOYH525" src="/Leonardo-portfolio/skills/css3.svg" alt="">
         <p class="text-negro text-2xl pt-4 font-semibold astro-4AOYH525">CSS</p>
-      </div><div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl hover:scale-110 hover:bg-celeste astro-4AOYH525">
+      </div><div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl transition duration-500 ease-in-out hover:bg-sky-400 transform hover:-translate-y-1 hover:scale-110 astro-4AOYH525">
         <img class="imagen  astro-4AOYH525" src="/Leonardo-portfolio/skills/javascript.svg" alt="">
         <p class="text-negro text-2xl pt-4 font-semibold astro-4AOYH525">Javascript</p>
-      </div><div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl hover:scale-110 hover:bg-celeste astro-4AOYH525">
+      </div><div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl transition duration-500 ease-in-out hover:bg-sky-400 transform hover:-translate-y-1 hover:scale-110 astro-4AOYH525">
         <img class="imagen  astro-4AOYH525" src="/Leonardo-portfolio/skills/bootstrap.svg" alt="">
         <p class="text-negro text-2xl pt-4 font-semibold astro-4AOYH525">Bootstrap</p>
-      </div><div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl hover:scale-110 hover:bg-celeste astro-4AOYH525">
+      </div><div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl transition duration-500 ease-in-out hover:bg-sky-400 transform hover:-translate-y-1 hover:scale-110 astro-4AOYH525">
         <img class="imagen  astro-4AOYH525" src="/Leonardo-portfolio/skills/tailwind.svg" alt="">
         <p class="text-negro text-2xl pt-4 font-semibold astro-4AOYH525">Tailwind</p>
-      </div><div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl hover:scale-110 hover:bg-celeste astro-4AOYH525">
+      </div><div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl transition duration-500 ease-in-out hover:bg-sky-400 transform hover:-translate-y-1 hover:scale-110 astro-4AOYH525">
         <img class="imagen  astro-4AOYH525" src="/Leonardo-portfolio/skills/git.svg" alt="">
         <p class="text-negro text-2xl pt-4 font-semibold astro-4AOYH525">Git</p>
-      </div><div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl hover:scale-110 hover:bg-celeste astro-4AOYH525">
+      </div><div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl transition duration-500 ease-in-out hover:bg-sky-400 transform hover:-translate-y-1 hover:scale-110 astro-4AOYH525">
         <img class="imagen  astro-4AOYH525" src="/Leonardo-portfolio/skills/github.svg" alt="">
         <p class="text-negro text-2xl pt-4 font-semibold astro-4AOYH525">GitHub</p>
-      </div><div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl hover:scale-110 hover:bg-celeste astro-4AOYH525">
+      </div><div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl transition duration-500 ease-in-out hover:bg-sky-400 transform hover:-translate-y-1 hover:scale-110 astro-4AOYH525">
         <img class="imagen  astro-4AOYH525" src="/Leonardo-portfolio/skills/react.svg" alt="">
         <p class="text-negro text-2xl pt-4 font-semibold astro-4AOYH525">React</p>
       </div>
