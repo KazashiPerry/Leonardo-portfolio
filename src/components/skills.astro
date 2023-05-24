@@ -5,16 +5,16 @@ import Astro from '../../public/skills/astro.svg'
 ---
 
 <p
-  class="text-4xl pb-32 lg:pb-20 pl-10 bg-celeste-crema  pt-20 font-semibold text-negro" id="Skills"
+  class="text-4xl pb-32 lg:pb-20 pl-14 bg-celeste-crema  pt-20 font-semibold text-negro" id="Skills"
 >
   My skills
 </p>
 <div
-  class="grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 place-items-center bg-celeste-crema  lg:pb-32"
+  class="grid lg:grid-cols-6 md:grid-cols-3 xm:grid-cols-2 place-items-center bg-celeste-crema  pb-32"
 >
   {
     skills.map((skill) => (
-      <div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl hover:scale-110 hover:bg-celeste">
+      <div class="flex flex-col items-center pb-10 bg-celeste-crema border-2 dark:border-negro border-crema p-4 rounded-2xl transition duration-500 ease-in-out hover:bg-sky-400 transform hover:-translate-y-1 hover:scale-110">
         <img
           class="imagen "
           src={skill.img}

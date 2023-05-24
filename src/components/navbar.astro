@@ -15,11 +15,11 @@ component: Skills
 
 <button
   id="buttonMenu"
-  class=" fixed w-full inset-x-0 items-center p-5 sm:block md:hidden text-blanco bg-negro"
+  class=" fixed w-full inset-x-0 items-center p-8 sm:block md:hidden text-blanco bg-gradient-to-r from-cyan-500 to-blue-500 z-30"
 >
   <span class="sr-only">Open sidebar</span>
   <svg
-    class="w-8 h-8"
+    class="w-14 h-14 text-negro"
     aria-hidden="true"
     fill="currentColor"
     viewBox="0 0 20 20"
@@ -42,18 +42,23 @@ component: Skills
     <a href="" class="flex items-center pl-2.5 mb-5">
       <!-- <img src="/public/Logo.svg" class="h-16 mr-3" alt="Portfolio logo" /> -->
       <span
-        class="self-center font-bold whitespace-nowrap dark:text-sky-200 text-4xl"
+        class="self-center font-bold whitespace-nowrap dark:text-sky-200 text-4xl pt-6 transition duration-500 ease-in-out transform hover:-translate-y-1"
         >| Portfolio</span
       >
+      
     </a>
+    <hr class="h-px my-8 bg-crema border-0 dark:bg-sky-200">
 
     <ul class="space-y-2 font-medium">
       
       {
         navbar.map((navbar) =>(
           <li>
-            <a class="flex items-center p-2 rounded-lg hover:bg-blanco dark:hover:bg-sky-200  ml-3 text-3xl text-negro dark:text-sky-200 dark:hover:text-negro  font-semibold"  href = { navbar.id }>{navbar.title}</a>
+            <a class="flex items-center p-2 rounded-lg hover:bg-blanco ml-3 text-3xl text-negro dark:text-sky-200 dark:hover:text-negro  font-semibold
+            
+            transition duration-500 ease-in-out dark:hover:bg-sky-200 transform hover:-translate-y-1 hover:scale-110"  href = { navbar.id }>{navbar.title}</a>
             </li>
+            
         ) )
       }
   
@@ -101,8 +106,31 @@ component: Skills
         </button>
       </div>
     </div>
+
+    
+<!-- <div class="flex ">
+  <div id="states-button" data-dropdown-toggle="dropdown-states" class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-negro bg-gray-100 border border-gray-300 rounded-l-lg  focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700  dark:focus:ring-gray-700 dark:text-white dark:border-gray-600">
+      
+      Language
+
+  </div>
+  
+  
+  <select id="idioma" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-r-lg border-l-gray-100 dark:border-l-gray-700 border-l-2 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+      <option value="CA">English</option>
+      <option value="ES">Español</option>
+      <option value="PT">Português</option>
+      
+  </select>
+</div> -->
+
+
+    </div>
+
   </div>
 </nav>
+
+
 
 
 <script>
@@ -178,5 +206,7 @@ component: Skills
     Nav.classList.add("hidden");
   }
 }); */
+
+
 
 </script>

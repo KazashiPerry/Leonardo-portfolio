@@ -7,6 +7,9 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			screens: {
+				"xm": "300px"
+			},
 			colors: {
 				'blanco': '#f2f2f2',
 				'negro': '#121212',
@@ -17,11 +20,11 @@ module.exports = {
 				'verde-azul': '#35879b'
 			},
 			backgroundImage: {
-				'svg-image': "url('/public/wave-haikei.svg')",
-				'svg-image-top': "url('/public/wave-haikei-top.svg')",
-				'svg-crema-top': "url('/public/wave-haikei-crema-top.svg')",
-				'svg-crema-bot': "url('/public/wave-haikei-crema-bot.svg')",
-				'circle-dark': "url('/public/circle-dark.svg')"
+				'svg-image': "url('/Leonardo-portfolio/wave-haikei.svg')",
+				'svg-image-top': "url('/Leonardo-portfolio/wave-haikei-top.svg')",
+				'svg-crema-top': "url('/Leonardo-portfolio/wave-haikei-crema-top.svg')",
+				'svg-crema-bot': "url('/Leonardo-portfolio/wave-haikei-crema-bot.svg')",
+				'circle-dark': "url('/Leonardo-portfolio/circle-dark.svg')"
 			}
 		},
 	},
